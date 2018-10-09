@@ -1,0 +1,20 @@
+/* Add here all your CSS customizations */
+.container {
+	padding-top: 30px;
+}
+
+.mg-counter-row p {
+	margin-top: 30px;
+}
+
+.mg-main-footer {
+	padding-top: 0px;
+}
+
+.mg-main-footer .container {
+	padding-top: 0px;
+}
+
+.mg-about-us {
+	padding-bottom: 5px;
+}
