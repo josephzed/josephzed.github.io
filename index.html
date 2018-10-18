@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>xDeal</title>
-        <meta name="description" content="Time to Give a Fuck">
+        <meta name="description" content="Time to save with xDeal.ml">
         <meta name="author" content="nmarco">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -34,6 +34,17 @@
         <link rel="stylesheet" href="vendor/responsive.css">
         <link rel="stylesheet" href="css/custom.css">
 		<link rel="stylesheet" href="css/modal.css">
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127758444-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-127758444-1');
+		</script>
+
 
 
         <!-- Condition script for ie for responsive and html5 -->
@@ -162,11 +173,16 @@
                             </div>
                         </div>
                         <div class="row">
-                            							
-							<div id='product-component-422bd082477'></div>
+                            	
+							<!--Product list starts -->								
+							<div id='product-tshirt'>
+								<div id='product-component-422bd082477'></div>
+							</div>
 							
-							<div id='product-component-fcdc8c31818'></div>
-								
+							<div id='product-yoyo'>
+								<div id='product-component-fcdc8c31818'></div>
+							</div>
+							<!--Product list ends-->	
 
                         </div>
                     </div>
@@ -221,6 +237,18 @@
 
         <footer class="mg-main-footer">
             <div class="container">
+				<div class="mg-social-lists">
+                    <ul>
+                        
+                        <li>
+                            <a href=""mailto:contact@xdeal.ml" target="_blank" class="freshr-button"><i class="fa fa-envelope"></i><span>Email</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.reddit.com/user/xdealml" target="_blank" class="freshr-button"><i class="fa fa-reddit"></i><span>Reddit</span></a>
+                        </li>
+                    </ul>
+                </div>
+				
                 <div class="mg-footer-credit">
                     <p>© xDeal.ml 2018, All right reserved</p>
                 </div>
@@ -268,6 +296,9 @@
 		<script type="text/javascript" src="js/code.js"></script>
 		<!-- PRODUCT BUTTONS -->
 		<script type="text/javascript" src="js/product.js"></script>
+		<!-- PRODUCT VISIBILITY -->
+		<script type="text/javascript" src="js/product.visibility.js"></script>
+	
 
     </body>
 
