@@ -71,15 +71,6 @@
                                 <div class="mg-hero-heading">
                                     <h1><strong>xDEAL.ML</strong></h1>
                                     <h2><strong id = "dealSpecific">Top Internet Deals Found With Machine Learning!</strong></h2>
-									<script>
-										const urlParams = new URLSearchParams(window.location.search);
-										const myParam = urlParams.get('d');
-										if (myParam != null && myParam != "") {
-											var element = document.getElementById("dealSpecific");
-											element.innerHTML = "Promotional Deals For " + atob(myParam + "==");
-										}
-									</script>
-                                    <!--<h3>Sale is live!</h3>-->
                                 </div>
                             </div>
                         </div>
@@ -323,9 +314,29 @@
 		<script type="text/javascript" src="js/product.protector.js"></script>
 		<script type="text/javascript" src="js/product.earphones.js"></script>
 		<!-- PRODUCT VISIBILITY -->
-		<script type="text/javascript" src="js/product.visibility.js"></script>
+		<!--script type="text/javascript" src="js/product.visibility.js"></script-->
 		<!-- DEAL SPECIFIC -->
-		<script type="text/javascript" src="js/deal.specific.js"></script>
+		<script>
+			const urlParams = new URLSearchParams(window.location.search);
+			const myParam = urlParams.get('d');
+			if (myParam != null && myParam != "") {
+				var element = document.getElementById("dealSpecific");
+				element.innerHTML = "Promotional Deals For " + atob(myParam + "==");
+				document.getElementById('product-retro-watch').style.display = 'visible'
+				document.getElementById('product-necklace').style.display = 'visible'
+				document.getElementById('product-fashion-watch').style.display = 'visible'
+				document.getElementById('product-eyelashes').style.display = 'visible'
+				document.getElementById('product-protector').style.display = 'visible'
+				document.getElementById('product-earphones').style.display = 'visible'
+			} else {
+				document.getElementById('product-retro-watch').style.display = 'none'
+				document.getElementById('product-necklace').style.display = 'visible'
+				document.getElementById('product-fashion-watch').style.display = 'none'
+				document.getElementById('product-eyelashes').style.display = 'visible'
+				document.getElementById('product-protector').style.display = 'none'
+				document.getElementById('product-earphones').style.display = 'visible'
+			}
+		</script>
 	
 
     </body>
