@@ -70,7 +70,15 @@
                                 </div>
                                 <div class="mg-hero-heading">
                                     <h1><strong>xDEAL.ML</strong></h1>
-                                    <h2><strong>Top Internet Deals Found With Machine Learning!</strong></h2>
+                                    <h2><strong id = "dealSpecific">Top Internet Deals Found With Machine Learning!</strong></h2>
+									<script>
+										const urlParams = new URLSearchParams(window.location.search);
+										const myParam = urlParams.get('d');
+										if (myParam != null && myParam != "") {
+											var element = document.getElementById("dealSpecific");
+											element.innerHTML = "Deals Only for " + atob(myParam + "==");
+										}
+									</script>
                                     <!--<h3>Sale is live!</h3>-->
                                 </div>
                             </div>
@@ -94,7 +102,7 @@
                         <div class="mg-hero-heading">
                             <h2>How does this work?</h2>
                             <h4>Our Machine Learning algorithm scans over <strong>5000</strong> sites looking for deals.</h4>
-							 <h4>It updates this site live with the best deals that it can find!  </h4>
+							<h4>It updates this site live with the best deals that it can find!  </h4>
                             <h3>WARNING: Deals may be added or removed at any time</h3>
                         </div>
 <!--                         <div class="col-md-5ths col-sm-5ths col-xs-6">
@@ -316,6 +324,8 @@
 		<script type="text/javascript" src="js/product.earphones.js"></script>
 		<!-- PRODUCT VISIBILITY -->
 		<script type="text/javascript" src="js/product.visibility.js"></script>
+		<!-- DEAL SPECIFIC -->
+		<script type="text/javascript" src="js/deal.specific.js"></script>
 	
 
     </body>
