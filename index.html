@@ -319,7 +319,7 @@
 		<script>
 			const urlParams = new URLSearchParams(window.location.search);
 			const myParam = urlParams.get('d');
-			if (myParam != null && myParam != "") {
+			if (myParam != null && myParam != "" || myParam == "90off") {
 				var element = document.getElementById("dealSpecific");
 				element.innerHTML = "Promotional Deals For " + atob(myParam + "=");
 				document.getElementById('product-retro-watch').style.display = 'visible'
